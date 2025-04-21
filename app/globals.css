@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --teal-primary: #008080;
+  --teal-dark: #006666;
+  --gold-accent: #d4af37;
+  --terracotta: #e07a5f;
+  --charcoal: #333333;
+  --off-white: #f5f5f5;
+  --light-gray: #e5e5e5;
+}
+
+/* Custom gradient backgrounds */
+.bg-gradient-teal {
+  background: linear-gradient(135deg, var(--teal-primary), var(--teal-dark));
+}
+
+.bg-gradient-dark {
+  background: linear-gradient(135deg, var(--charcoal), #1a1a1a);
+}
+
+/* Custom shadows */
+.shadow-custom {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-custom-lg {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Custom animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
