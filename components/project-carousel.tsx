@@ -10,37 +10,37 @@ const projects = [
     id: 1,
     title: "Modern Minimalist Living Room",
     description: "A clean, minimalist approach with neutral tones and strategic accent pieces.",
-    image: "/placeholder.svg?height=400&width=600&text=Modern+Minimalist+Living+Room",
+    image: "/outdoor.jpg?height=400&width=600&text=Modern+Minimalist+Living+Room",
   },
   {
     id: 2,
     title: "Luxurious Master Bedroom",
     description: "Opulent textures and rich colors create a sanctuary of comfort and style.",
-    image: "/placeholder.svg?height=400&width=600&text=Luxurious+Master+Bedroom",
+    image: "/interior.jpg?height=400&width=600&text=Luxurious+Master+Bedroom",
   },
   {
     id: 3,
     title: "Contemporary Kitchen Design",
     description: "Sleek cabinetry and state-of-the-art appliances for the modern chef.",
-    image: "/placeholder.svg?height=400&width=600&text=Contemporary+Kitchen+Design",
+    image: "/lighting.jpg?height=400&width=600&text=Contemporary+Kitchen+Design",
   },
   {
     id: 4,
     title: "Elegant Office Space",
     description: "Productivity meets sophistication in this carefully curated workspace.",
-    image: "/placeholder.svg?height=400&width=600&text=Elegant+Office+Space",
+    image: "/bedroom.jpg?height=400&width=600&text=Elegant+Office+Space",
   },
   {
     id: 5,
     title: "Outdoor Patio Oasis",
     description: "Bringing indoor comfort to outdoor living with durable, stylish elements.",
-    image: "/placeholder.svg?height=400&width=600&text=Outdoor+Patio+Oasis",
+    image: "/kitchen.jpg?height=400&width=600&text=Outdoor+Patio+Oasis",
   },
 ]
 
 export default function ProjectCarousel() {
   const [activeIndex, setActiveIndex] = useState(0)
-  const [visibleProjects, setVisibleProjects] = useState([])
+  const [visibleProjects, setVisibleProjects] = useState<{ id: number; title: string; description: string; image: string }[]>([])
   const [windowWidth, setWindowWidth] = useState(0)
 
   useEffect(() => {

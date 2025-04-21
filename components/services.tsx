@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { ChevronRight, Home, Lamp, Palette } from "lucide-react"
+import { ChevronRight, Home, Lamp, Zap } from "lucide-react"
 import { motion } from "framer-motion"
 
 const fadeIn = {
@@ -47,20 +47,23 @@ export default function Services() {
           {[
             {
               title: "Lighting Design",
+              image: "/lighting.jpg?height=800&width=1600&text=Luxurious+Bedrooms",
               description:
                 "We create custom lighting solutions for modern, bold, and accent lighting for a functional atmosphere.",
               icon: <Lamp className="w-6 h-6 text-[#E07A5F]" />,
             },
             {
               title: "Interior Design",
+              image: "/interiroi.jpg?height=800&width=1600&text=Luxurious+Bedrooms",
               description:
                 "We create beautiful and functional interior living space to bring your vision to life efficiently.",
               icon: <Home className="w-6 h-6 text-[#E07A5F]" />,
             },
             {
               title: "Outdoor Design",
+              image: "/outdoor.jpg?height=800&width=1600&text=Luxurious+Bedrooms",
               description: "We create beautiful outdoor spaces with awesome outdoor decor services.",
-              icon: <Palette className="w-6 h-6 text-[#E07A5F]" />,
+              icon: <Zap  className="w-6 h-6 text-[#E07A5F]" />,
             },
           ].map((service, index) => (
             <motion.div
@@ -71,7 +74,7 @@ export default function Services() {
             >
               <div className="h-48 mb-6 overflow-hidden rounded-lg relative">
                 <Image
-                  src={`/placeholder.svg?height=300&width=400&text=${service.title}`}
+                  src={service.image || "https://via.placeholder.com/1600x600?text=Image+Unavailable"}
                   alt={service.title}
                   width={400}
                   height={300}

@@ -114,7 +114,7 @@ export default function ThreeSteps() {
           className="rounded-xl overflow-hidden shadow-xl"
         >
           <Image
-            src="/placeholder.svg?height=450&width=500&text=Modern+Interior+Design"
+            src="/project.jpg?height=450&width=500&text=Modern+Interior+Design"
             alt="Modern interior design process"
             width={500}
             height={450}

@@ -1,8 +1,9 @@
 "use client"
 
 import Link from "next/link"
-import { Home, Phone, Settings, Users } from "lucide-react"
+import { Home, Phone, Settings, Users ,InfoIcon} from "lucide-react"
 import { motion } from "framer-motion"
+import { link } from "fs"
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -48,14 +49,16 @@ export default function Header() {
       <nav className="hidden md:flex items-center space-x-8">
         <motion.div className="flex space-x-8" variants={staggerContainer} initial="hidden" animate="visible">
           {[
-            { name: "Home", icon: <Home size={16} /> },
-            { name: "Services", icon: <Settings size={16} /> },
-            { name: "Contact", icon: <Phone size={16} /> },
-            { name: "Support", icon: <Users size={16} /> },
+            { name: "Home", icon: <Home size={16} />, link: "/" },
+            { name: "Services", icon: <Settings size={16}  /> ,link:"/services" },
+
+            { name: "About Us", icon: <InfoIcon size={16} />, link: "/about" },
+            { name: "Contact", icon: <Phone size={16} /> ,link:"/contact"},
+            { name: "Support", icon: <Users size={16} />  ,link:"/support"},
           ].map((item, index) => (
             <motion.div key={index} variants={fadeIn}>
               <Link
-                href="#"
+                href={item.link || "/"}
                 className="text-sm font-medium hover:text-[#008080] transition-colors duration-300 flex items-center gap-1"
               >
                 {item.icon}

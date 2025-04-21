@@ -17,7 +17,6 @@ import MobileNavbar from "@/components/mobile-navbar"
 export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen w-full overflow-x-hidden bg-[#FAFAFA] pb-16 md:pb-0">
-      <Header />
       <ImageSlider />
 
       <main className="flex-grow w-full">
@@ -34,7 +33,6 @@ export default function HomePage() {
         </div>
       </main>
 
-      <Footer />
       <MobileNavbar />
     </div>
   )

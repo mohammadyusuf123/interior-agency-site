@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { Home, Settings, Sparkles, Zap } from "lucide-react"
+import { Home, Lamp, Settings, Sparkles, Zap } from "lucide-react"
 import { motion } from "framer-motion"
 
 const fadeIn = {
@@ -29,7 +29,7 @@ export default function DreamDesign() {
           className="rounded-xl overflow-hidden shadow-xl"
         >
           <Image
-            src="/placeholder.svg?height=450&width=500&text=Luxurious+Living+Room"
+            src="/dreamDesign.jpg?height=450&width=500&text=Luxurious+Living+Room"
             alt="Luxurious living room design"
             width={500}
             height={450}
@@ -43,7 +43,7 @@ export default function DreamDesign() {
           transition={{ delay: 0.3, duration: 0.5 }}
           className="absolute -bottom-6 -right-6 bg-[#D4AF37] p-4 rounded-lg shadow-lg"
         >
-          <Sparkles className="w-8 h-8 text-white" />
+          <Lamp className="w-8 h-8 text-white" />
         </motion.div>
       </motion.div>
       <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }} variants={fadeIn}>
