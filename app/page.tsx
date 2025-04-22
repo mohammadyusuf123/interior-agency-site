@@ -1,6 +1,5 @@
 "use client"
 
-import Header from "@/components/header"
 import ImageSlider from "@/components/image-slider"
 import Hero from "@/components/hero"
 import Stats from "@/components/stats"
@@ -11,8 +10,6 @@ import TestimonialCarousel from "@/components/testimonial-carousel"
 import Newsletter from "@/components/newsletter"
 import PricingCards from "@/components/pricing-cards"
 import ProjectCarousel from "@/components/project-carousel"
-import Footer from "@/components/footer"
-import MobileNavbar from "@/components/mobile-navbar"
 
 export default function HomePage() {
   return (
@@ -33,7 +30,6 @@ export default function HomePage() {
         </div>
       </main>
 
-      <MobileNavbar />
     </div>
   )
 }

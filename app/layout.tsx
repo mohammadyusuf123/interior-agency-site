@@ -16,6 +16,7 @@ export const metadata = {
 }
 
 import { ReactNode } from "react";
+import MobileNavbar from "@/components/mobile-navbar"
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
@@ -23,6 +24,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <Header />
       <body className={inter.className}>{children}</body>
       <Footer />
+      <MobileNavbar />
+      {/* Uncomment the line above to enable the mobile navbar */}
     </html>
   )
 }

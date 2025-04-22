@@ -26,7 +26,7 @@ export default function ServicesPage() {
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-teal-50 to-white">
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-[#008080]/10 to-[#006666]/10">
+        <section className="w-full flex justify-center items-center py-12 md:py-24 lg:py-32 bg-gradient-to-r from-[#008080]/10 to-[#006666]/10">
           <div className="container px-4 md:px-6">
             <motion.div
               className="flex flex-col items-center justify-center space-y-4 text-center"
@@ -54,7 +54,7 @@ export default function ServicesPage() {
 
         <Services />
 
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-[#008080]/10 to-[#006666]/20">
+        <section className="w-full flex justify-center items-center py-12 md:py-24 lg:py-32 bg-gradient-to-r from-[#008080]/10 to-[#006666]/20">
           <div className="container px-4 md:px-6">
             <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center">
               <motion.div
@@ -161,7 +161,7 @@ export default function ServicesPage() {
 
       <PricingCards />
 
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-[#008080]/10 to-[#006666]/10">
+        <section className="w-full flex justify-center items-center py-12 md:py-24 lg:py-32 bg-gradient-to-r from-[#008080]/10 to-[#006666]/10">
           <div className="container px-4 md:px-6">
             <motion.div
               className="flex flex-col items-center justify-center space-y-4 text-center mb-12"
@@ -265,12 +265,11 @@ export default function ServicesPage() {
             </div>
           </div>
         </section>
-
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-[#008080]/20 via-[#008080]/10 to-[#006666]/20">
-          <div className="container mx-auto flex justify-center items-center px-4 md:px-6">
-            <div className="flex flex-col items-center">
+      
+  
+            <div className="w-full flex justify-center items-center py-12 md:py-24 lg:py-32 bg-gradient-to-r from-[#008080]/20 via-[#008080]/10 to-[#006666]/20">
               <motion.div
-                className="space-y-4"
+                className="flex flex-col items-center justify-center space-y-4 text-center"
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6 }}
@@ -302,8 +301,7 @@ export default function ServicesPage() {
               </motion.div>
              
             </div>
-          </div>
-        </section>
+      
       </main>
     </div>
   )
