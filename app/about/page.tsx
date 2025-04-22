@@ -53,7 +53,7 @@ export default function AboutUs() {
               transition={{ type: "spring", stiffness: 300 }}
             >
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/team.jpg?height=400&width=600"
                 alt="Company team working together"
                 width={600}
                 height={400}
@@ -206,37 +206,37 @@ export default function AboutUs() {
                 name: "Sarah Johnson",
                 role: "Chief Executive Officer",
                 bio: "With over 15 years of industry experience, Sarah leads our company with vision and determination.",
-                image: "/placeholder.svg?height=300&width=300",
+                image: "/people1.jpg?height=300&width=300",
               },
               {
                 name: "Michael Chen",
                 role: "Chief Technology Officer",
                 bio: "Michael brings innovative thinking and technical expertise to drive our product development.",
-                image: "/placeholder.svg?height=300&width=300",
+                image: "/people2.jpg?height=300&width=300",
               },
               {
                 name: "Jessica Williams",
                 role: "Chief Operating Officer",
                 bio: "Jessica ensures our operations run smoothly and efficiently to deliver exceptional results.",
-                image: "/placeholder.svg?height=300&width=300",
+                image: "/people3.jpg?height=300&width=300",
               },
               {
                 name: "David Rodriguez",
                 role: "Chief Marketing Officer",
                 bio: "David crafts our brand strategy and leads our marketing initiatives with creativity and insight.",
-                image: "/placeholder.svg?height=300&width=300",
+                image: "/people4.jpg?height=300&width=300",
               },
               {
                 name: "Emily Patel",
                 role: "Chief Financial Officer",
                 bio: "Emily manages our financial strategy with precision and foresight to ensure sustainable growth.",
-                image: "/placeholder.svg?height=300&width=300",
+                image: "/people5.jpg?height=300&width=300",
               },
               {
                 name: "Robert Kim",
                 role: "Head of Customer Success",
                 bio: "Robert is dedicated to ensuring our customers achieve their goals and have an exceptional experience.",
-                image: "/placeholder.svg?height=300&width=300",
+                image: "/people6.jpg?height=300&width=300",
               },
             ].map((member, index) => (
               <motion.div
