@@ -53,7 +53,7 @@ export default function Header() {
             { name: "Services", icon: <Settings size={16}  /> ,link:"/services" },
 
             { name: "About Us", icon: <InfoIcon size={16} />, link: "/about" },
-            { name: "Contact", icon: <Phone size={16} /> ,link:"/contact"},
+            { name: "Contact Us", icon: <Phone size={16} /> ,link:"/contact"},
             // { name: "Support", icon: <Users size={16} />  ,link:"/support"},
           ].map((item, index) => (
             <motion.div key={index} variants={fadeIn}>
